@@ -1,0 +1,81 @@
+order_id,customer_id,product_id,order_date,status
+1,43,15,2025-08-03,delivered
+2,11,17,2025-06-25,in progress
+3,33,18,2025-06-15,in progress
+4,7,18,2025-05-30,shipped
+5,37,11,,in progress
+6,16,7,2025-07-24,canceled
+7,26,2,2025-07-31,delivered
+8,13,17,2025-08-14,delivered
+9,13,9,2025-08-04,delivered
+10,39,11,,in progress
+11,35,5,2025-07-12,in progress
+12,9,16,2025-06-09,pending
+13,2,9,2025-06-09,in progress
+14,32,11,2025-09-12,shipped
+15,33,5,2025-06-10,delivered
+16,39,20,2025-06-19,canceled
+17,45,19,2025-07-16,delivered
+18,24,15,2025-07-23,DELIVRD
+19,27,11,2025-07-13,pending
+20,22,7,2025-06-22,shipped
+21,25,2,2025-09-14,pending
+22,33,9,2025-05-29,shipped
+23,36,13,2025-09-23,canceled
+24,8,9,2025-09-11,in progress
+25,21,2,2025-07-19,delivered
+26,38,13,2025-08-18,pending
+27,37,23,2025-09-13,DELIVRD
+28,29,9,2025-08-08,in progress
+29,37,12,2025-08-08,DELIVRD
+30,30,17,2025-06-23,canceled
+31,22,2,2025-08-17,delivered
+32,28,22,2025-06-04,shipped
+33,31,18,,in progress
+34,10,11,2025-09-23,shipped
+35,39,2,2025-07-24,in progress
+36,19,23,2025-08-04,delivered
+37,21,13,2025-07-28,delivered
+38,17,10,2025-05-29,pending
+39,23,14,,delivered
+40,32,22,2025-08-05,delivered
+41,18,17,2025-09-04,DELIVRD
+42,34,7,2025-05-29,pending
+43,15,10,2025-07-25,delivered
+44,29,20,2025-06-13,canceled
+45,13,17,2025-08-10,delivered
+46,41,13,2025-07-03,pending
+47,8,2,2025-09-24,DELIVRD
+48,28,17,2025-07-31,pending
+49,9,7,2025-08-23,shipped
+50,3,8,2025-06-18,delivered
+51,26,1,,DELIVRD
+52,21,18,,shipped
+53,28,23,2025-09-21,shipped
+54,20,4,2025-09-09,DELIVRD
+55,21,7,2025-07-06,DELIVRD
+56,24,5,2025-08-14,pending
+57,15,17,2025-06-11,pending
+58,26,18,2025-07-05,delivered
+59,32,2,2025-07-07,pending
+60,7,5,2025-08-06,canceled
+61,36,20,,in progress
+62,23,10,2025-08-19,pending
+63,4,4,2025-08-30,delivered
+64,38,22,2025-07-23,delivered
+65,43,7,2025-09-13,shipped
+66,27,5,2025-09-11,shipped
+67,1,6,2025-06-29,delivered
+68,22,2,,shipped
+69,30,14,2025-08-12,DELIVRD
+70,26,2,,delivered
+71,30,23,,DELIVRD
+72,3,12,2025-06-03,shipped
+73,16,8,2025-07-18,canceled
+74,43,5,,delivered
+75,19,11,2025-06-04,canceled
+76,15,2,,delivered
+77,8,8,2025-06-29,shipped
+78,36,1,2025-07-05,in progress
+79,42,18,2025-08-07,pending
+80,36,12,2025-07-03,shipped

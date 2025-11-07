@@ -1,0 +1,296 @@
+DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: /Users/korobkin/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager
+DEBUG:selenium.webdriver.common.selenium_manager:Executing process: /Users/korobkin/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver not found in PATH
+DEBUG:selenium.webdriver.common.selenium_manager:chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+DEBUG:selenium.webdriver.common.selenium_manager:Output: "Google Chrome 141.0.7390.123 "
+DEBUG:selenium.webdriver.common.selenium_manager:Detected browser: chrome 141.0.7390.123
+DEBUG:selenium.webdriver.common.selenium_manager:Required driver: chromedriver 141.0.7390.122
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver 141.0.7390.122 already in the cache
+DEBUG:selenium.webdriver.common.selenium_manager:Driver path: /Users/korobkin/.cache/selenium/chromedriver/mac-x64/141.0.7390.122/chromedriver
+DEBUG:selenium.webdriver.common.selenium_manager:Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+DEBUG:selenium.webdriver.common.service:Started executable: `/Users/korobkin/.cache/selenium/chromedriver/mac-x64/141.0.7390.122/chromedriver` in a child process with pid: 91875 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', 'args': []}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:64104
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"141.0.7390.123","chrome":{"chromedriverVersion":"141.0.7390.122 (b477534e7e10d193e916cd4e2967c589383625b2-refs/branch-heads/7390@{#2667})","userDataDir":"/var/folders/xq/k28hhdp52nsbf92tjy5nm6940000gn/T/.org.chromium.Chromium.c6VOUz"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:64126"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"06a6462a3a229a44e711bd14221c62eb"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:parsing start
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+DEBUG:telethon.network.mtprotosender:Connection attempt 1...
+DEBUG:telethon.network.mtprotosender:Connection success!
+DEBUG:telethon.network.mtprotosender:Starting send loop
+DEBUG:telethon.network.mtprotosender:Starting receive loop
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496030385423352 to InvokeWithLayerRequest (1078b2820)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 80 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.network.mtprotosender:Handling bad salt for message 7568496030385423352
+DEBUG:telethon.network.mtprotosender:1 message(s) will be resent
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496030462531736 to InvokeWithLayerRequest (1078b2820)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 80 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496030464563064 to MsgsAck (1078b2940)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling container
+DEBUG:telethon.network.mtprotosender:Handling new session created
+DEBUG:telethon.network.mtprotosender:Handling acknowledge for [7568496030462531736]
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568496030462531736
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496031507703476 to GetUsersRequest (1078b2e50)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 32 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496031511015584 to MsgsAck (1078b28b0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 60 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568496031507703476
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496031850179364 to GetStateRequest (1078b2e50)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 20 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496031854032212 to MsgsAck (1078b2df0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568496031850179364
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496032200555496 to GetDifferenceRequest (10665b2b0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496032204710656 to MsgsAck (1078b2e80)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568496032200555496
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496032509391480 to GetUsersRequest (1078b27c0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 32 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568496032511575392 to MsgsAck (1078b2ee0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568496032509391480
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+INFO:root:login start
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/url {'url': 'https://ais.usvisa-info.com/ru-kz/niv/users/sign_in'}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element {'using': 'css selector', 'value': '[id="user_email"]'}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.3/value {'text': 'doner66@gmail.com', 'value': ['d', 'o', 'n', 'e', 'r', '6', '6', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.3/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element {'using': 'css selector', 'value': '[id="user_password"]'}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.4/value {'text': 'Al89086307525Zx!', 'value': ['A', 'l', '8', '9', '0', '8', '6', '3', '0', '7', '5', '2', '5', 'Z', 'x', '!']}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.4/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element {'using': 'css selector', 'value': '.icheckbox'}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.35"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.35/click {}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.35/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element {'using': 'css selector', 'value': '[name="commit"]'}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.8"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.8/click {}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element/f.400B5824FCC683314B7C975B054CDC85.d.C188D6A1297628162A5C2F6E4E0D42A6.e.8/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/url {'url': 'https://ais.usvisa-info.com/ru-kz/niv/schedule/71354735/payment'}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64104/session/06a6462a3a229a44e711bd14221c62eb/element {'using': 'xpath', 'value': '//*[@id="paymentOptions"]/div[2]/table/tbody/tr[1]/td[2]'}
+DEBUG:urllib3.connectionpool:http://localhost:64104 "POST /session/06a6462a3a229a44e711bd14221c62eb/element HTTP/1.1" 404 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"paymentOptions\"]/div[2]/table/tbody/tr[1]/td[2]\"}\n  (Session info: chrome=141.0.7390.123)","stacktrace":"0   chromedriver                        0x000000010fa29108 chromedriver + 6119688\n1   chromedriver                        0x000000010fa2080a chromedriver + 6084618\n2   chromedriver                        0x000000010f4bc1a6 chromedriver + 430502\n3   chromedriver                        0x000000010f50e8a1 chromedriver + 768161\n4   chromedriver                        0x000000010f50eb61 chromedriver + 768865\n5   chromedriver                        0x000000010f55f034 chromedriver + 1097780\n6   chromedriver                        0x000000010f534e2d chromedriver + 925229\n7   chromedriver                        0x000000010f55c378 chromedriver + 1086328\n8   chromedriver                        0x000000010f534bd3 chromedriver + 924627\n9   chromedriver                        0x000000010f500c0b chromedriver + 711691\n10  chromedriver                        0x000000010f5018d1 chromedriver + 714961\n11  chromedriver                        0x000000010f9e65d0 chromedriver + 5846480\n12  chromedriver                        0x000000010f9ea865 chromedriver + 5863525\n13  chromedriver                        0x000000010f9c1da7 chromedriver + 5696935\n14  chromedriver                        0x000000010f9eb2ff chromedriver + 5866239\n15  chromedriver                        0x000000010f9b1204 chromedriver + 5628420\n16  chromedriver                        0x000000010fa0d828 chromedriver + 6006824\n17  chromedriver                        0x000000010fa0d9ed chromedriver + 6007277\n18  chromedriver                        0x000000010fa203e1 chromedriver + 6083553\n19  libsystem_pthread.dylib             0x00007ff80bb531d3 _pthread_start + 125\n20  libsystem_pthread.dylib             0x00007ff80bb4ebd3 thread_start + 15\n"}} | headers=HTTPHeaderDict({'Content-Length': '1977', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+DEBUG:telethon.network.mtprotosender:Closing current connection...
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Cancelling 0 pending message(s)...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!
+DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: /Users/korobkin/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager
+DEBUG:selenium.webdriver.common.selenium_manager:Executing process: /Users/korobkin/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver not found in PATH
+DEBUG:selenium.webdriver.common.selenium_manager:chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+DEBUG:selenium.webdriver.common.selenium_manager:Output: "Google Chrome 141.0.7390.123 "
+DEBUG:selenium.webdriver.common.selenium_manager:Detected browser: chrome 141.0.7390.123
+DEBUG:selenium.webdriver.common.selenium_manager:Required driver: chromedriver 141.0.7390.122
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver 141.0.7390.122 already in the cache
+DEBUG:selenium.webdriver.common.selenium_manager:Driver path: /Users/korobkin/.cache/selenium/chromedriver/mac-x64/141.0.7390.122/chromedriver
+DEBUG:selenium.webdriver.common.selenium_manager:Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+DEBUG:selenium.webdriver.common.service:Started executable: `/Users/korobkin/.cache/selenium/chromedriver/mac-x64/141.0.7390.122/chromedriver` in a child process with pid: 92292 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', 'args': []}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:49690
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"141.0.7390.123","chrome":{"chromedriverVersion":"141.0.7390.122 (b477534e7e10d193e916cd4e2967c589383625b2-refs/branch-heads/7390@{#2667})","userDataDir":"/var/folders/xq/k28hhdp52nsbf92tjy5nm6940000gn/T/.org.chromium.Chromium.0Kg6HG"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:49714"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"51b6b41a7d3586457447b69285ed9ada"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:parsing start
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:telethon.network.mtprotosender:Connecting to 149.154.167.51:443/TcpFull...
+DEBUG:telethon.network.mtprotosender:Connection attempt 1...
+DEBUG:telethon.network.mtprotosender:Connection success!
+DEBUG:telethon.network.mtprotosender:Starting send loop
+DEBUG:telethon.network.mtprotosender:Starting receive loop
+INFO:telethon.network.mtprotosender:Connection to 149.154.167.51:443/TcpFull complete!
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498038981746352 to InvokeWithLayerRequest (112af8970)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 80 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.network.mtprotostate:Updated time offset (old offset 0, bad 7568498039069179212, good 7568498040294312961, new 1)
+DEBUG:telethon.network.mtprotosender:Handling bad salt for message 7568498038981746352
+DEBUG:telethon.network.mtprotosender:1 message(s) will be resent
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498043367445268 to InvokeWithLayerRequest (112af8970)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 80 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498043370193756 to MsgsAck (112af8a90)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling container
+DEBUG:telethon.network.mtprotosender:Handling new session created
+DEBUG:telethon.network.mtprotosender:Handling acknowledge for [7568498043367445268]
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568498043367445268
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498043819374004 to GetUsersRequest (112af8fa0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 32 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498043824582020 to MsgsAck (112af8a00)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 60 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568498043819374004
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498044090053476 to GetStateRequest (112af8fa0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 20 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498044095765032 to MsgsAck (112af8f40)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568498044090053476
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498044864313044 to GetDifferenceRequest (1118a03a0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498044865721624 to MsgsAck (112af8610)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568498044864313044
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498045362321772 to GetUsersRequest (112af8910)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 32 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.extensions.messagepacker:Assigned msg_id = 7568498045365585248 to MsgsAck (112b1c2b0)
+DEBUG:telethon.network.mtprotosender:Encrypting 1 message(s) in 36 bytes for sending
+DEBUG:telethon.network.mtprotosender:Encrypted messages put in a queue to be sent
+DEBUG:telethon.network.mtprotosender:Waiting for messages to send...
+DEBUG:telethon.network.mtprotosender:Handling RPC result for message 7568498045362321772
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+INFO:root:login start
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/url {'url': 'https://ais.usvisa-info.com/ru-kz/niv/users/sign_in'}
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element {'using': 'css selector', 'value': '[id="user_email"]'}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.3/value {'text': 'doner66@gmail.com', 'value': ['d', 'o', 'n', 'e', 'r', '6', '6', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.3/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element {'using': 'css selector', 'value': '[id="user_password"]'}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.4/value {'text': 'Al89086307525Zx!', 'value': ['A', 'l', '8', '9', '0', '8', '6', '3', '0', '7', '5', '2', '5', 'Z', 'x', '!']}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.4/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element {'using': 'css selector', 'value': '.icheckbox'}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.32/click {}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.32/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:telethon.network.mtprotosender:Handling container
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element {'using': 'css selector', 'value': '[name="commit"]'}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.8"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.8/click {}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.D4C319386707CADB1C69A3248214F729.e.8/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/url {'url': 'https://ais.usvisa-info.com/ru-kz/niv/schedule/71354735/payment'}
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:telethon.network.mtprotosender:Handling update UpdateShort
+DEBUG:telethon.network.mtprotosender:Receiving items from the network...
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element {'using': 'xpath', 'value': '//*[@id="paymentOptions"]/div[2]/table/tbody/tr[1]/td[2]'}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "POST /session/51b6b41a7d3586457447b69285ed9ada/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A9F93445959F8C0E5F2C4A17FF011E6E.d.2512E8CC3AA8D48224BB7840F06BC9BA.e.82"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:49690/session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.2512E8CC3AA8D48224BB7840F06BC9BA.e.82/text {}
+DEBUG:urllib3.connectionpool:http://localhost:49690 "GET /session/51b6b41a7d3586457447b69285ed9ada/element/f.A9F93445959F8C0E5F2C4A17FF011E6E.d.2512E8CC3AA8D48224BB7840F06BC9BA.e.82/text HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"В данный момент запись невозможна."} | headers=HTTPHeaderDict({'Content-Length': '75', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Контент функции get_payment: В данный момент запись невозможна.
+INFO:root:Содержание функции login: None
+INFO:telethon.network.mtprotosender:Disconnecting from 149.154.167.51:443/TcpFull...
+DEBUG:telethon.network.mtprotosender:Closing current connection...
+DEBUG:telethon.network.mtprotosender:Cancelling 0 pending message(s)...
+INFO:telethon.network.mtprotosender:Disconnection from 149.154.167.51:443/TcpFull complete!

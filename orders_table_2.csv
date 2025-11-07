@@ -1,0 +1,119 @@
+order_id,customer_id,product_id,order_date,quantity,new_status,product_name,category,price,email,new_name,first_name,last_name,valid_email,new_country,reg_date,valid_phone,e_mail
+1,43,15.0,2025-08-03,1.0,delivered,Design,Smrtphone,1828.31,sarah96@ramirez.com,Charles Rush ,Charles,Rush,True,Russia,2024-08-24,79101763056,sarah96@ramirez.com
+2,11,17.0,2025-06-25,1.0,in progress,Edge,Laptops,682.07,ymerritt@bennett.com,Katrina Mann ,Katrina,Mann,True,USA,2025-07-12,79009549974,ymerritt@bennett.com
+3,33,18.0,2025-06-15,1.0,in progress,Easy,Smartphones,1606.53,jessicakelly,Jessica Kelly ,Jessica,Kelly,False,Brasil,2025-03-19,79095975148,
+4,7,18.0,2025-05-30,1.0,shipped,Easy,Smartphones,1606.53,brendadecker@smith-bell.com,Jasmine Osborne ,Jasmine,Osborne,True,Germany,2025-08-11,79192420456,brendadecker@smith-bell.com
+6,16,7.0,2025-07-24,1.0,canceled,Believe,Other,2067.33,gardnermiguel@hotmail.com,Jose Hawkins ,Jose,Hawkins,True,France,2025-02-18,79616991988,gardnermiguel@hotmail.com
+7,26,2.0,2025-07-31,1.0,delivered,Arrive,Laptops,2386.61,matthew02@gmail.com,Hailey Rush ,Hailey,Rush,True,Russia,2025-09-27,79421450404,matthew02@gmail.com
+8,13,17.0,2025-08-14,1.0,delivered,Edge,Laptops,682.07,elizabeth10@hughes.com,Stacey Barnes ,Stacey,Barnes,True,USA,2025-03-07,79646182670,elizabeth10@hughes.com
+9,13,9.0,2025-08-04,1.0,delivered,Relate,Other,1662.84,elizabeth10@hughes.com,Stacey Barnes ,Stacey,Barnes,True,USA,2025-03-07,79646182670,elizabeth10@hughes.com
+11,35,5.0,2025-07-12,1.0,in progress,Main,Smrtphone,186.69,sara41@yahoo.com,Amanda David ,Amanda,David,True,India,2025-02-02,79200674273,sara41@yahoo.com
+12,9,16.0,2025-06-09,1.0,pending,Technology,Accessories,784.63,paulwilliams,Paul Williams ,Paul,Williams,False,India,2025-03-25,79516226023,
+13,2,9.0,2025-06-09,1.0,in progress,Relate,Other,1662.84,johnsnicholas@gmail.com,Mia Martin ,Mia,Martin,True,India,2025-07-16,79019923782,johnsnicholas@gmail.com
+14,32,11.0,2025-09-12,1.0,shipped,Her,Laptops,843.89,krodriguez@yahoo.com,Andrea Ayers ,Andrea,Ayers,True,Russia,2025-07-05,79751113117,krodriguez@yahoo.com
+15,33,5.0,2025-06-10,1.0,delivered,Main,Smrtphone,186.69,jessicakelly,Jessica Kelly ,Jessica,Kelly,False,Brasil,2025-03-19,79095975148,
+16,39,20.0,2025-06-19,1.0,canceled,Lawyer,Other,705.58,jill36@barnes.com,Timothy Rodriguez ,Timothy,Rodriguez,True,USA,2025-05-17,79821228902,jill36@barnes.com
+17,45,19.0,2025-07-16,1.0,delivered,Still,Other,1485.31,joneskaren@bennett.info,James Grant ,James,Grant,True,Russia,2024-10-31,79795843835,joneskaren@bennett.info
+18,24,15.0,2025-07-23,1.0,delivered,Design,Smrtphone,1828.31,raymondbrett@yahoo.com,Edward Odonnell ,Edward,Odonnell,True,Russia,2025-04-10,79357005806,raymondbrett@yahoo.com
+19,27,11.0,2025-07-13,1.0,pending,Her,Laptops,843.89,ruizamber@yahoo.com,Matthew Gross ,Matthew,Gross,True,France,2025-09-10,79051099453,ruizamber@yahoo.com
+20,22,7.0,2025-06-22,1.0,shipped,Believe,Other,2067.33,michael75@gmail.com,Heidi Caldwell ,Heidi,Caldwell,True,China,2025-09-22,79235349358,michael75@gmail.com
+21,25,2.0,2025-09-14,1.0,pending,Arrive,Laptops,2386.61,deborahadams@yahoo.com,John Cannon ,John,Cannon,True,USA,2025-04-21,79693054915,deborahadams@yahoo.com
+22,33,9.0,2025-05-29,1.0,shipped,Relate,Other,1662.84,jessicakelly,Jessica Kelly ,Jessica,Kelly,False,Brasil,2025-03-19,79095975148,
+23,36,13.0,2025-09-23,1.0,canceled,Task,Laptoop,165.97,kristi73@walker-bates.biz,Samantha Lewis ,Samantha,Lewis,True,Russia,2025-07-15,79620890498,kristi73@walker-bates.biz
+24,8,9.0,2025-09-11,1.0,in progress,Relate,Other,1662.84,victoria38@hooper-hernandez.net,Jonathan Holloway ,Jonathan,Holloway,True,India,2025-04-18,79539477117,victoria38@hooper-hernandez.net
+25,21,2.0,2025-07-19,1.0,delivered,Arrive,Laptops,2386.61,heather10@yahoo.com,Lisa Smith ,Lisa,Smith,True,India,2025-05-06,79862497624,heather10@yahoo.com
+26,38,13.0,2025-08-18,1.0,pending,Task,Laptoop,165.97,wallacemichael@yahoo.com,Beth Stevens ,Beth,Stevens,True,Germany,2025-01-29,79500406120,wallacemichael@yahoo.com
+27,37,23.0,2025-09-13,1.0,delivered,,,,mitchellthomas@hotmail.com,Colin Jones ,Colin,Jones,True,China,2025-07-03,79641972849,mitchellthomas@hotmail.com
+28,29,9.0,2025-08-08,1.0,in progress,Relate,Other,1662.84,justin65@williams-smith.com,James Watts ,James,Watts,True,Russia,2025-09-19,79895990279,justin65@williams-smith.com
+29,37,12.0,2025-08-08,1.0,delivered,Less,Laptoop,296.53,mitchellthomas@hotmail.com,Colin Jones ,Colin,Jones,True,China,2025-07-03,79641972849,mitchellthomas@hotmail.com
+30,30,17.0,2025-06-23,1.0,canceled,Edge,Laptops,682.07,vincent73@rose-garcia.org,Derrick Martin ,Derrick,Martin,True,India,2025-08-07,79688916226,vincent73@rose-garcia.org
+31,22,2.0,2025-08-17,1.0,delivered,Arrive,Laptops,2386.61,michael75@gmail.com,Heidi Caldwell ,Heidi,Caldwell,True,China,2025-09-22,79235349358,michael75@gmail.com
+32,28,22.0,2025-06-04,1.0,shipped,,,,mgordon@thornton-santana.com,Stephanie Walker ,Stephanie,Walker,True,Brasil,2025-07-10,79814473186,mgordon@thornton-santana.com
+34,10,11.0,2025-09-23,1.0,shipped,Her,Laptops,843.89,stephanie60@gmail.com,Corey Scott ,Corey,Scott,True,Brasil,2025-03-11,79419274809,stephanie60@gmail.com
+35,39,2.0,2025-07-24,1.0,in progress,Arrive,Laptops,2386.61,jill36@barnes.com,Timothy Rodriguez ,Timothy,Rodriguez,True,USA,2025-05-17,79821228902,jill36@barnes.com
+36,19,23.0,2025-08-04,1.0,delivered,,,,zvasquez@scott.info,Brandi Zamora ,Brandi,Zamora,True,China,2025-08-11,79304390326,zvasquez@scott.info
+37,21,13.0,2025-07-28,1.0,delivered,Task,Laptoop,165.97,heather10@yahoo.com,Lisa Smith ,Lisa,Smith,True,India,2025-05-06,79862497624,heather10@yahoo.com
+38,17,10.0,2025-05-29,1.0,pending,Analysis,Other,1281.86,joseph08@blanchard.com,Dillon Hunter ,Dillon,Hunter,True,Russia,2025-05-01,79215387106,joseph08@blanchard.com
+40,32,22.0,2025-08-05,1.0,delivered,,,,krodriguez@yahoo.com,Andrea Ayers ,Andrea,Ayers,True,Russia,2025-07-05,79751113117,krodriguez@yahoo.com
+41,18,17.0,2025-09-04,1.0,delivered,Edge,Laptops,682.07,christopherstewart@yahoo.com,Stephanie Smith ,Stephanie,Smith,True,Brasil,2025-02-18,79374017843,christopherstewart@yahoo.com
+42,34,7.0,2025-05-29,1.0,pending,Believe,Other,2067.33,reneejones@smith.com,Cory Lewis ,Cory,Lewis,True,Brasil,2025-01-13,79116220561,reneejones@smith.com
+43,15,10.0,2025-07-25,1.0,delivered,Analysis,Other,1281.86,shannon74@moody-johnson.net,Patrick Gibson ,Patrick,Gibson,True,India,2025-06-08,79547295100,shannon74@moody-johnson.net
+44,29,20.0,2025-06-13,1.0,canceled,Lawyer,Other,705.58,justin65@williams-smith.com,James Watts ,James,Watts,True,Russia,2025-09-19,79895990279,justin65@williams-smith.com
+45,13,17.0,2025-08-10,1.0,delivered,Edge,Laptops,682.07,elizabeth10@hughes.com,Stacey Barnes ,Stacey,Barnes,True,USA,2025-03-07,79646182670,elizabeth10@hughes.com
+46,41,13.0,2025-07-03,1.0,pending,Task,Laptoop,165.97,ashley67@gmail.com,Kelly Sanders ,Kelly,Sanders,True,Russia,2024-03-29,,ashley67@gmail.com
+47,8,2.0,2025-09-24,1.0,delivered,Arrive,Laptops,2386.61,victoria38@hooper-hernandez.net,Jonathan Holloway ,Jonathan,Holloway,True,India,2025-04-18,79539477117,victoria38@hooper-hernandez.net
+48,28,17.0,2025-07-31,1.0,pending,Edge,Laptops,682.07,mgordon@thornton-santana.com,Stephanie Walker ,Stephanie,Walker,True,Brasil,2025-07-10,79814473186,mgordon@thornton-santana.com
+49,9,7.0,2025-08-23,1.0,shipped,Believe,Other,2067.33,paulwilliams,Paul Williams ,Paul,Williams,False,India,2025-03-25,79516226023,
+50,3,8.0,2025-06-18,1.0,delivered,Center,Other,933.5,davidknox@pruitt-berry.com,Jerome Whitehead ,Jerome,Whitehead,True,Russia,2025-03-13,79297100535,davidknox@pruitt-berry.com
+53,28,23.0,2025-09-21,1.0,shipped,,,,mgordon@thornton-santana.com,Stephanie Walker ,Stephanie,Walker,True,Brasil,2025-07-10,79814473186,mgordon@thornton-santana.com
+54,20,4.0,2025-09-09,1.0,delivered,Building,Other,1833.63,thomaspittman,Thomas Pittman ,Thomas,Pittman,False,Brasil,2025-01-02,79776663055,
+55,21,7.0,2025-07-06,1.0,delivered,Believe,Other,2067.33,heather10@yahoo.com,Lisa Smith ,Lisa,Smith,True,India,2025-05-06,79862497624,heather10@yahoo.com
+56,24,5.0,2025-08-14,1.0,pending,Main,Smrtphone,186.69,raymondbrett@yahoo.com,Edward Odonnell ,Edward,Odonnell,True,Russia,2025-04-10,79357005806,raymondbrett@yahoo.com
+57,15,17.0,2025-06-11,1.0,pending,Edge,Laptops,682.07,shannon74@moody-johnson.net,Patrick Gibson ,Patrick,Gibson,True,India,2025-06-08,79547295100,shannon74@moody-johnson.net
+58,26,18.0,2025-07-05,1.0,delivered,Easy,Smartphones,1606.53,matthew02@gmail.com,Hailey Rush ,Hailey,Rush,True,Russia,2025-09-27,79421450404,matthew02@gmail.com
+59,32,2.0,2025-07-07,1.0,pending,Arrive,Laptops,2386.61,krodriguez@yahoo.com,Andrea Ayers ,Andrea,Ayers,True,Russia,2025-07-05,79751113117,krodriguez@yahoo.com
+60,7,5.0,2025-08-06,1.0,canceled,Main,Smrtphone,186.69,brendadecker@smith-bell.com,Jasmine Osborne ,Jasmine,Osborne,True,Germany,2025-08-11,79192420456,brendadecker@smith-bell.com
+62,23,10.0,2025-08-19,1.0,pending,Analysis,Other,1281.86,qbennett@gates.com,Catherine Rowland ,Catherine,Rowland,True,India,2025-01-30,79229944293,qbennett@gates.com
+63,4,4.0,2025-08-30,1.0,delivered,Building,Other,1833.63,lorifowler@hotmail.com,Andrew Torres ,Andrew,Torres,True,Brasil,2025-01-13,79267080354,lorifowler@hotmail.com
+64,38,22.0,2025-07-23,1.0,delivered,,,,wallacemichael@yahoo.com,Beth Stevens ,Beth,Stevens,True,Germany,2025-01-29,79500406120,wallacemichael@yahoo.com
+65,43,7.0,2025-09-13,1.0,shipped,Believe,Other,2067.33,sarah96@ramirez.com,Charles Rush ,Charles,Rush,True,Russia,2024-08-24,79101763056,sarah96@ramirez.com
+66,27,5.0,2025-09-11,1.0,shipped,Main,Smrtphone,186.69,ruizamber@yahoo.com,Matthew Gross ,Matthew,Gross,True,France,2025-09-10,79051099453,ruizamber@yahoo.com
+67,1,6.0,2025-06-29,1.0,delivered,Safe,Other,1593.51,grayanna@christian-moore.com,Brandon Russell ,Brandon,Russell,True,Russia,2025-03-30,79584854643,grayanna@christian-moore.com
+69,30,14.0,2025-08-12,1.0,delivered,Ten,Laptoop,1532.02,vincent73@rose-garcia.org,Derrick Martin ,Derrick,Martin,True,India,2025-08-07,79688916226,vincent73@rose-garcia.org
+72,3,12.0,2025-06-03,1.0,shipped,Less,Laptoop,296.53,davidknox@pruitt-berry.com,Jerome Whitehead ,Jerome,Whitehead,True,Russia,2025-03-13,79297100535,davidknox@pruitt-berry.com
+73,16,8.0,2025-07-18,1.0,canceled,Center,Other,933.5,gardnermiguel@hotmail.com,Jose Hawkins ,Jose,Hawkins,True,France,2025-02-18,79616991988,gardnermiguel@hotmail.com
+75,19,11.0,2025-06-04,1.0,canceled,Her,Laptops,843.89,zvasquez@scott.info,Brandi Zamora ,Brandi,Zamora,True,China,2025-08-11,79304390326,zvasquez@scott.info
+77,8,8.0,2025-06-29,1.0,shipped,Center,Other,933.5,victoria38@hooper-hernandez.net,Jonathan Holloway ,Jonathan,Holloway,True,India,2025-04-18,79539477117,victoria38@hooper-hernandez.net
+78,36,1.0,2025-07-05,1.0,in progress,As,Other,360.92,kristi73@walker-bates.biz,Samantha Lewis ,Samantha,Lewis,True,Russia,2025-07-15,79620890498,kristi73@walker-bates.biz
+79,42,18.0,2025-08-07,1.0,pending,Easy,Smartphones,1606.53,anthonyhodge@yahoo.com,Kimberly Gonzalez ,Kimberly,Gonzalez,True,Russia,2025-03-02,79034259653,anthonyhodge@yahoo.com
+80,36,12.0,2025-07-03,1.0,shipped,Less,Laptoop,296.53,kristi73@walker-bates.biz,Samantha Lewis ,Samantha,Lewis,True,Russia,2025-07-15,79620890498,kristi73@walker-bates.biz
+5001,9,122.0,2025-04-13,2.0,delivered,Right,Other,0.0,paulwilliams,Paul Williams ,Paul,Williams,False,India,2025-03-25,79516226023,
+5002,11,129.0,2025-03-02,1.0,shipped,Too,Smartphones,643.98,ymerritt@bennett.com,Katrina Mann ,Katrina,Mann,True,USA,2025-07-12,79009549974,ymerritt@bennett.com
+5003,7,130.0,2025-07-18,1.0,delivered,Unknown product,Accessories,0.0,brendadecker@smith-bell.com,Jasmine Osborne ,Jasmine,Osborne,True,Germany,2025-08-11,79192420456,brendadecker@smith-bell.com
+5004,3,126.0,2024-09-15,1.0,delivered,Job,Other,1047.51,davidknox@pruitt-berry.com,Jerome Whitehead ,Jerome,Whitehead,True,Russia,2025-03-13,79297100535,davidknox@pruitt-berry.com
+5005,16,114.0,2025-02-05,2.0,shipped,Unknown product,Other,1024.22,gardnermiguel@hotmail.com,Jose Hawkins ,Jose,Hawkins,True,France,2025-02-18,79616991988,gardnermiguel@hotmail.com
+5006,23,101.0,2025-06-21,2.0,canceled,Unknown product,Laptops,0.0,qbennett@gates.com,Catherine Rowland ,Catherine,Rowland,True,India,2025-01-30,79229944293,qbennett@gates.com
+5007,18,118.0,2025-02-10,1.0,pending,Unknown product,Laptops,1431.54,christopherstewart@yahoo.com,Stephanie Smith ,Stephanie,Smith,True,Brasil,2025-02-18,79374017843,christopherstewart@yahoo.com
+5008,19,112.0,2024-09-11,1.0,delivered,Congress,Laptops,1624.54,zvasquez@scott.info,Brandi Zamora ,Brandi,Zamora,True,China,2025-08-11,79304390326,zvasquez@scott.info
+5009,3,124.0,2025-04-15,1.0,pending,Unknown product,Smartphones,97.55,davidknox@pruitt-berry.com,Jerome Whitehead ,Jerome,Whitehead,True,Russia,2025-03-13,79297100535,davidknox@pruitt-berry.com
+5010,6,110.0,2025-03-21,1.0,pending,Can,Smartphones,1899.22,kbarrett@rogers-myers.com,Sarah Brewer ,Sarah,Brewer,True,Brasil,2025-06-19,79321488243,kbarrett@rogers-myers.com
+5011,30,109.0,2025-04-21,1.0,pending,Unknown product,Other,1713.74,vincent73@rose-garcia.org,Derrick Martin ,Derrick,Martin,True,India,2025-08-07,79688916226,vincent73@rose-garcia.org
+5012,20,121.0,2024-12-02,1.0,shipped,Important,Other,334.74,thomaspittman,Thomas Pittman ,Thomas,Pittman,False,Brasil,2025-01-02,79776663055,
+5013,2,111.0,2024-11-06,1.0,canceled,Unknown product,Other,1720.52,johnsnicholas@gmail.com,Mia Martin ,Mia,Martin,True,India,2025-07-16,79019923782,johnsnicholas@gmail.com
+5014,24,102.0,2024-11-01,1.0,canceled,Then,Laptops,1358.09,raymondbrett@yahoo.com,Edward Odonnell ,Edward,Odonnell,True,Russia,2025-04-10,79357005806,raymondbrett@yahoo.com
+5015,20,115.0,2025-04-25,1.0,canceled,Unknown product,Smartphones,930.31,thomaspittman,Thomas Pittman ,Thomas,Pittman,False,Brasil,2025-01-02,79776663055,
+5016,10,112.0,2025-02-24,3.0,shipped,Congress,Laptops,1624.54,stephanie60@gmail.com,Corey Scott ,Corey,Scott,True,Brasil,2025-03-11,79419274809,stephanie60@gmail.com
+5017,1,117.0,2024-10-22,1.0,pending,Unknown product,Laptops,713.72,grayanna@christian-moore.com,Brandon Russell ,Brandon,Russell,True,Russia,2025-03-30,79584854643,grayanna@christian-moore.com
+5018,1,124.0,2024-11-22,3.0,delivered,Unknown product,Smartphones,97.55,grayanna@christian-moore.com,Brandon Russell ,Brandon,Russell,True,Russia,2025-03-30,79584854643,grayanna@christian-moore.com
+5019,7,112.0,2024-12-03,1.0,canceled,Congress,Laptops,1624.54,brendadecker@smith-bell.com,Jasmine Osborne ,Jasmine,Osborne,True,Germany,2025-08-11,79192420456,brendadecker@smith-bell.com
+5020,10,,2025-08-06,2.0,canceled,,,,stephanie60@gmail.com,Corey Scott ,Corey,Scott,True,Brasil,2025-03-11,79419274809,stephanie60@gmail.com
+5021,5,113.0,2025-04-28,1.0,delivered,Cultural,Laptops,0.0,ameyer@yahoo.com,Emily Sanders ,Emily,Sanders,True,Russia,2025-09-20,79263963526,ameyer@yahoo.com
+5022,19,105.0,2024-11-25,1.0,shipped,Source,Accessories,1983.69,zvasquez@scott.info,Brandi Zamora ,Brandi,Zamora,True,China,2025-08-11,79304390326,zvasquez@scott.info
+5023,29,112.0,2024-11-25,2.0,delivered,Congress,Laptops,1624.54,justin65@williams-smith.com,James Watts ,James,Watts,True,Russia,2025-09-19,79895990279,justin65@williams-smith.com
+5024,16,117.0,2025-07-08,2.0,canceled,Unknown product,Laptops,713.72,gardnermiguel@hotmail.com,Jose Hawkins ,Jose,Hawkins,True,France,2025-02-18,79616991988,gardnermiguel@hotmail.com
+5025,2,115.0,2024-12-05,1.0,shipped,Unknown product,Smartphones,930.31,johnsnicholas@gmail.com,Mia Martin ,Mia,Martin,True,India,2025-07-16,79019923782,johnsnicholas@gmail.com
+5026,4,120.0,2024-11-26,1.0,canceled,Stay,Other,1504.16,lorifowler@hotmail.com,Andrew Torres ,Andrew,Torres,True,Brasil,2025-01-13,79267080354,lorifowler@hotmail.com
+5027,16,123.0,2024-10-11,1.0,canceled,Unknown product,Laptops,505.02,gardnermiguel@hotmail.com,Jose Hawkins ,Jose,Hawkins,True,France,2025-02-18,79616991988,gardnermiguel@hotmail.com
+5028,14,,2024-09-18,2.0,shipped,,,,sotoleah@yahoo.com,Jean Martinez ,Jean,Martinez,True,Russia,2025-04-21,79963433408,sotoleah@yahoo.com
+5029,20,120.0,2025-08-07,1.0,pending,Stay,Other,1504.16,thomaspittman,Thomas Pittman ,Thomas,Pittman,False,Brasil,2025-01-02,79776663055,
+5030,20,120.0,2025-02-19,1.0,shipped,Stay,Other,1504.16,thomaspittman,Thomas Pittman ,Thomas,Pittman,False,Brasil,2025-01-02,79776663055,
+5031,10,124.0,2025-07-23,3.0,shipped,Unknown product,Smartphones,97.55,stephanie60@gmail.com,Corey Scott ,Corey,Scott,True,Brasil,2025-03-11,79419274809,stephanie60@gmail.com
+5032,1,101.0,2025-03-16,1.0,shipped,Unknown product,Laptops,0.0,grayanna@christian-moore.com,Brandon Russell ,Brandon,Russell,True,Russia,2025-03-30,79584854643,grayanna@christian-moore.com
+5033,6,125.0,2025-02-01,3.0,canceled,Clear,Accessories,1245.62,kbarrett@rogers-myers.com,Sarah Brewer ,Sarah,Brewer,True,Brasil,2025-06-19,79321488243,kbarrett@rogers-myers.com
+5034,4,118.0,2025-07-02,1.0,shipped,Unknown product,Laptops,1431.54,lorifowler@hotmail.com,Andrew Torres ,Andrew,Torres,True,Brasil,2025-01-13,79267080354,lorifowler@hotmail.com
+5035,19,114.0,2025-06-20,1.0,pending,Unknown product,Other,1024.22,zvasquez@scott.info,Brandi Zamora ,Brandi,Zamora,True,China,2025-08-11,79304390326,zvasquez@scott.info
+5036,4,117.0,2025-06-13,3.0,shipped,Unknown product,Laptops,713.72,lorifowler@hotmail.com,Andrew Torres ,Andrew,Torres,True,Brasil,2025-01-13,79267080354,lorifowler@hotmail.com
+5037,2,114.0,2024-10-03,3.0,canceled,Unknown product,Other,1024.22,johnsnicholas@gmail.com,Mia Martin ,Mia,Martin,True,India,2025-07-16,79019923782,johnsnicholas@gmail.com
+5038,5,110.0,2024-09-13,1.0,delivered,Can,Smartphones,1899.22,ameyer@yahoo.com,Emily Sanders ,Emily,Sanders,True,Russia,2025-09-20,79263963526,ameyer@yahoo.com
+5039,26,118.0,2025-02-15,3.0,shipped,Unknown product,Laptops,1431.54,matthew02@gmail.com,Hailey Rush ,Hailey,Rush,True,Russia,2025-09-27,79421450404,matthew02@gmail.com
+5040,14,114.0,2025-03-23,1.0,pending,Unknown product,Other,1024.22,sotoleah@yahoo.com,Jean Martinez ,Jean,Martinez,True,Russia,2025-04-21,79963433408,sotoleah@yahoo.com
+5041,9,109.0,2025-04-27,1.0,delivered,Unknown product,Other,1713.74,paulwilliams,Paul Williams ,Paul,Williams,False,India,2025-03-25,79516226023,
+5042,9,,2024-10-07,1.0,delivered,,,,paulwilliams,Paul Williams ,Paul,Williams,False,India,2025-03-25,79516226023,
+5043,28,110.0,2025-05-07,2.0,shipped,Can,Smartphones,1899.22,mgordon@thornton-santana.com,Stephanie Walker ,Stephanie,Walker,True,Brasil,2025-07-10,79814473186,mgordon@thornton-santana.com
+5044,27,102.0,2024-12-14,1.0,delivered,Then,Laptops,1358.09,ruizamber@yahoo.com,Matthew Gross ,Matthew,Gross,True,France,2025-09-10,79051099453,ruizamber@yahoo.com
+5045,20,124.0,2025-02-11,1.0,shipped,Unknown product,Smartphones,97.55,thomaspittman,Thomas Pittman ,Thomas,Pittman,False,Brasil,2025-01-02,79776663055,
+5046,19,107.0,2025-05-04,1.0,canceled,Environmental,Other,729.6,zvasquez@scott.info,Brandi Zamora ,Brandi,Zamora,True,China,2025-08-11,79304390326,zvasquez@scott.info
+5047,6,109.0,2024-11-07,2.0,shipped,Unknown product,Other,1713.74,kbarrett@rogers-myers.com,Sarah Brewer ,Sarah,Brewer,True,Brasil,2025-06-19,79321488243,kbarrett@rogers-myers.com
+5048,6,122.0,2025-04-16,3.0,delivered,Right,Other,0.0,kbarrett@rogers-myers.com,Sarah Brewer ,Sarah,Brewer,True,Brasil,2025-06-19,79321488243,kbarrett@rogers-myers.com
+5049,29,117.0,2025-06-19,2.0,shipped,Unknown product,Laptops,713.72,justin65@williams-smith.com,James Watts ,James,Watts,True,Russia,2025-09-19,79895990279,justin65@williams-smith.com
+5050,7,104.0,2025-06-18,3.0,delivered,Cover,Laptops,85.82,brendadecker@smith-bell.com,Jasmine Osborne ,Jasmine,Osborne,True,Germany,2025-08-11,79192420456,brendadecker@smith-bell.com
