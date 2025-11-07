@@ -61,10 +61,18 @@ API_HASH = 'c9a677eb94e21ed0b889e426fa19180b'
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 
+REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
+
 driver = webdriver.Remote(
-    command_executor='https://chrome.browserless.io/webdriver?token=<YOUR_TOKEN>',
+    command_executor=REMOTE_URL,
     options=options
 )
+
+# driver = webdriver.Remote(
+#     command_executor='https://chrome.browserless.io/webdriver?token=<YOUR_TOKEN>',
+#     options=options
+# )
+
 
 def send(msg):
     url = "https://api.pushover.net/1/messages.json"
@@ -77,15 +85,15 @@ def send(msg):
 
 
 def get_drive():
-    # local_use = platform.system() == 'Darwin'
-    # if local_use:
-    #     dr = webdriver.Chrome()
-    # else:
-    #     dr = webdriver.Remote(command_executor=HUB_ADDRESS, 
-    #                           desired_capabilities=DesiredCapabilities.CHROME)
-    # return dr
-    dr = webdriver.Chrome()
+    local_use = platform.system() == 'Darwin'
+    if local_use:
+        dr = webdriver.Chrome()
+    else:
+        dr = webdriver.Remote(command_executor=HUB_ADDRESS, 
+                              desired_capabilities=DesiredCapabilities.CHROME)
     return dr
+    # dr = webdriver.Chrome()
+    # return dr
 
 # driver = get_drive()
 
@@ -95,7 +103,6 @@ def login():
     logging.info("login start")
     driver.get("https://ais.usvisa-info.com/ru-kz/niv/users/sign_in")
     time.sleep(1)
-
 
     do_login_action()
     print_payment = get_payment()
@@ -186,7 +193,7 @@ def reschedule(date):
     }
     
     r = requests.post(APPOINTMENT_URL, headers=headers, data=data)
-    if(r.text.find('Successfully Scheduled') != -1):
+    if (r.text.find('Successfully Scheduled') != -1):
         print("Successfully Rescheduled")
         send("Successfully Rescheduled")
         EXIT = True
@@ -197,7 +204,7 @@ def reschedule(date):
 
 def is_logined():
     content = driver.page_source
-    if(content.find("error") != -1):
+    if (content.find("error") != -1):
         return False
     return True
 
@@ -209,6 +216,8 @@ def print_date(dates):
 
 
 last_seen = None
+
+
 def get_available_date(dates):
     global last_seen
 
