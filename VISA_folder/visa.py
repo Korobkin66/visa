@@ -77,14 +77,15 @@ def send(msg):
 
 
 def get_drive():
-    local_use = platform.system() == 'Darwin'
-    if local_use:
-        dr = webdriver.Chrome()
-    else:
-        dr = webdriver.Remote(command_executor=HUB_ADDRESS, 
-                              desired_capabilities=DesiredCapabilities.CHROME)
+    # local_use = platform.system() == 'Darwin'
+    # if local_use:
+    #     dr = webdriver.Chrome()
+    # else:
+    #     dr = webdriver.Remote(command_executor=HUB_ADDRESS, 
+    #                           desired_capabilities=DesiredCapabilities.CHROME)
+    # return dr
+    dr = webdriver.Chrome()
     return dr
-
 
 # driver = get_drive()
 
