@@ -61,8 +61,8 @@ API_HASH = 'c9a677eb94e21ed0b889e426fa19180b'
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 
-REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
-# REMOTE_URL = "https://production-sfo.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
+# REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
+REMOTE_URL = "https://production-sfo.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
 
 
 
