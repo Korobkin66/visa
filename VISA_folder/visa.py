@@ -61,14 +61,11 @@ API_HASH = 'c9a677eb94e21ed0b889e426fa19180b'
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 
-# REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
-REMOTE_URL = "https://production-sfo.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
+REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
+# REMOTE_URL = "https://production-sfo.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
 
 
-driver = webdriver.Remote(
-    command_executor=REMOTE_URL,
-    options=options
-)
+
 
 # driver = webdriver.Remote(
 #     command_executor='https://chrome.browserless.io/webdriver?token=<YOUR_TOKEN>',
@@ -91,13 +88,14 @@ def get_drive():
     if local_use:
         dr = webdriver.Chrome()
     else:
-        dr = webdriver.Remote(command_executor=HUB_ADDRESS, 
-                              desired_capabilities=DesiredCapabilities.CHROME)
+        dr = webdriver.Remote(command_executor=REMOTE_URL, options=options)
+
     return dr
     # dr = webdriver.Chrome()
     # return dr
 
-# driver = get_drive()
+
+driver = get_drive()
 
 
 def login():
