@@ -19,6 +19,9 @@ import logging
 import asyncio
 import os
 
+
+logger = logging.getLogger("my_logger")
+logger.setLevel(logging.DEBUG)
 # добавляем поток вывода в файл
 file_log = logging.FileHandler("thecode.log")
 # и вывод в консоль
@@ -26,6 +29,16 @@ console_out = logging.StreamHandler()
 
 # указываем эти два потока в настройках логгера
 logging.basicConfig(handlers=(file_log, console_out), level=logging.DEBUG)
+
+console_out.setLevel(logging.DEBUG)
+
+# Создаём форматтер с временем
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s',
+                              datefmt='%Y-%m-%d %H:%M:%S')
+console_out.setFormatter(formatter)
+
+# Добавляем обработчик к логгеру
+logger.addHandler(console_out)
 
 
 USERNAME = 'doner66@gmail.com'
@@ -62,7 +75,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 
 # REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
-REMOTE_URL = "https://production-sfo.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
+REMOTE_URL = "https://production-sfo.browserless.io/chromium/bql?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
 
 
 
@@ -100,13 +113,13 @@ driver = get_drive()
 
 def login():
     # Bypass reCAPTCHA
-    logging.info("login start")
+    logger.info("login start")
     driver.get("https://ais.usvisa-info.com/ru-kz/niv/users/sign_in")
     time.sleep(1)
 
     do_login_action()
     print_payment = get_payment()
-    logging.info(f'Контент функции get_payment: {print_payment}')
+    logger.info(f'Контент функции get_payment: {print_payment}')
     if print_payment != 'В данный момент запись невозможна.':
         return print_payment
 
@@ -242,7 +255,7 @@ def push_notification(dates):
 
 if __name__ == "__main__":
 
-    logging.info("parsing start")
+    logger.info("parsing start")
     # retry_count = 0
     real_id, peer_type = utils.resolve_id(-1003267457372)
 
@@ -254,11 +267,13 @@ if __name__ == "__main__":
     async def main():
         # log_var = login()
         log_var = await asyncio.to_thread(login)
-        logging.info(f'Содержание функции login: {log_var}')
+        logger.info(f'Содержание функции login: {log_var}')
         if log_var:
             await client.send_message(types.PeerChannel(real_id), log_var)
-            logging.info('Сообщение было отправлено')
+            logger.info('Сообщение было отправлено')
 
     with client:
         client.loop.run_until_complete(main())
+
+
 
