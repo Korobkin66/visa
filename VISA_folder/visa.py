@@ -19,6 +19,7 @@ import logging
 import asyncio
 import os
 
+# 8395673645:AAE2Ku-wDhM_RMrwqkZEHfF58vefm6m5eQw
 
 logger = logging.getLogger("my_logger")
 logger.setLevel(logging.DEBUG)
@@ -28,7 +29,9 @@ file_log = logging.FileHandler("thecode.log")
 console_out = logging.StreamHandler()
 
 # указываем эти два потока в настройках логгера
-logging.basicConfig(handlers=(file_log, console_out), level=logging.DEBUG)
+logging.basicConfig(handlers=(file_log, console_out), level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S')
 
 console_out.setLevel(logging.DEBUG)
 
@@ -78,8 +81,6 @@ options.add_argument("--headless")
 REMOTE_URL = "https://production-sfo.browserless.io/chromium/bql?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
 
 
-
-
 # driver = webdriver.Remote(
 #     command_executor='https://chrome.browserless.io/webdriver?token=<YOUR_TOKEN>',
 #     options=options
@@ -108,23 +109,23 @@ def get_drive():
     # return dr
 
 
-driver = get_drive()
-
-
 def login():
+    driver = get_drive()
+
     # Bypass reCAPTCHA
     logger.info("login start")
     driver.get("https://ais.usvisa-info.com/ru-kz/niv/users/sign_in")
     time.sleep(1)
 
-    do_login_action()
-    print_payment = get_payment()
+    do_login_action(driver)
+    print_payment = get_payment(driver)
     logger.info(f'Контент функции get_payment: {print_payment}')
+    driver.close()
     if print_payment != 'В данный момент запись невозможна.':
         return print_payment
 
 
-def do_login_action():
+def do_login_action(driver):
     print("input email")
     user = driver.find_element(By.ID, 'user_email')
     user.send_keys(USERNAME)
@@ -149,7 +150,7 @@ def do_login_action():
     print("Login successfully! ")
 
 
-def get_payment():
+def get_payment(driver):
     driver.get(PAYMENT_URL)
     time.sleep(random.randint(1, 3))
     # if not is_logined():
@@ -159,98 +160,6 @@ def get_payment():
     content = driver.find_element(By.XPATH, '//*[@id="paymentOptions"]/div[2]/table/tbody/tr[1]/td[2]').text
     # date = json.loads(content)
     return content
-
-
-def get_date():
-    driver.get(DATE_URL)
-    if not is_logined():
-        login()
-        return get_date()
-    else:
-        content = driver.find_element_by_tag_name('pre').text
-        date = json.loads(content)
-        return date
-
-
-def get_time(date):
-    time_url = TIME_URL % date
-    driver.get(time_url)
-    content = driver.find_element_by_tag_name('pre').text
-    data = json.loads(content)
-    time = data.get("available_times")[-1]
-    print("Get time successfully!")
-    return time
-
-
-def reschedule(date):
-    global EXIT
-    print("Start Reschedule")
-
-    time = get_time(date)
-    driver.get(APPOINTMENT_URL)
-
-    data = {
-        "utf8": driver.find_element_by_name('utf8').get_attribute('value'),
-        "authenticity_token": driver.find_element_by_name('authenticity_token').get_attribute('value'),
-        "confirmed_limit_message": driver.find_element_by_name('confirmed_limit_message').get_attribute('value'),
-        "use_consulate_appointment_capacity": driver.find_element_by_name('use_consulate_appointment_capacity').get_attribute('value'),
-        "appointments[consulate_appointment][facility_id]": "108",
-        "appointments[consulate_appointment][date]": date,
-        "appointments[consulate_appointment][time]": time,
-    }
-
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
-        "Referer": APPOINTMENT_URL,
-        "Cookie": "_yatri_session=" + driver.get_cookie("_yatri_session")["value"]
-    }
-    
-    r = requests.post(APPOINTMENT_URL, headers=headers, data=data)
-    if (r.text.find('Successfully Scheduled') != -1):
-        print("Successfully Rescheduled")
-        send("Successfully Rescheduled")
-        EXIT = True
-    else:
-        print("ReScheduled Fail")
-        send("ReScheduled Fail")
-
-
-def is_logined():
-    content = driver.page_source
-    if (content.find("error") != -1):
-        return False
-    return True
-
-
-def print_date(dates):
-    for d in dates:
-        print("%s \t business_day: %s" %(d.get('date'), d.get('business_day')))
-    print()
-
-
-last_seen = None
-
-
-def get_available_date(dates):
-    global last_seen
-
-    def is_earlier(date):
-        return datetime.strptime(MY_SCHEDULE_DATE, "%Y-%m-%d") > datetime.strptime(date, "%Y-%m-%d")
-
-    for d in dates:
-        date = d.get('date')
-        if is_earlier(date) and date != last_seen:
-            _, month, day = date.split('-')
-            if (MY_CONDITION(month, day)):
-                last_seen = date
-                return date
-
-
-def push_notification(dates):
-    msg = "date: "
-    for d in dates:
-        msg = msg + d.get('date') + '; '
-    send(msg)
 
 
 if __name__ == "__main__":
@@ -265,15 +174,18 @@ if __name__ == "__main__":
     client = TelegramClient('my_session', API_ID, API_HASH)
 
     async def main():
-        # log_var = login()
-        log_var = await asyncio.to_thread(login)
-        logger.info(f'Содержание функции login: {log_var}')
-        if log_var:
-            await client.send_message(types.PeerChannel(real_id), log_var)
-            logger.info('Сообщение было отправлено')
+        while True:
+            # log_var = login()
+            try:
+                log_var = await asyncio.to_thread(login)
+                logger.info(f'Содержание функции login: {log_var}')
+                if log_var:
+                    await client.send_message(types.PeerChannel(real_id), log_var)
+                    logger.info('Сообщение было отправлено')
+            except Exception as e:
+                await client.send_message(types.PeerChannel(real_id),
+                                          f'Произошла ошибка {e}')
+            time.sleep(600)
 
     with client:
         client.loop.run_until_complete(main())
-
-
-
