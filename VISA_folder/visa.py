@@ -160,7 +160,7 @@ def get_payment(driver):
     content = driver.find_element(By.XPATH, '//*[@id="paymentOptions"]/div[2]/table/tbody/tr[1]/td[2]').text
     # date = json.loads(content)
     return content
-
+ 
 
 if __name__ == "__main__":
 
