@@ -98,7 +98,8 @@ def send(msg):
 
 
 def get_drive():
-    local_use = platform.system() == 'Darwin'
+    # local_use = platform.system() == 'Darwin' # (MacOS)
+    local_use = platform.system() == 'Linux'  # (Linux/Ubuntu)
     if local_use:
         dr = webdriver.Chrome()
     else:
