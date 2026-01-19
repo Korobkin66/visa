@@ -44,12 +44,12 @@ console_out.setFormatter(formatter)
 logger.addHandler(console_out)
 
 
-USERNAME = 'doner66@gmail.com'
-PASSWORD = 'Al89086307525Zx!'
+USERNAME = os.getenv('USERNAME')
+PASSWORD = os.getenv('PASSWORD')
 SCHEDULE = '71354735'
 
-PUSH_TOKEN = '<my push token>'
-PUSH_USER = 'uhyji9ppjdhkfx25grddjjeg1c9mjx'
+PUSH_TOKEN = os.getenv('PUSH_TOKEN')
+PUSH_USER = os.getenv('PUSH_USER')
 
 MY_SCHEDULE_DATE = "2025-10-27"  # 2025-12-02
 # MY_CONDITION = lambda month,day: int(month) == 11 or (int(month) == 12 and int(day) <=5)
@@ -65,8 +65,8 @@ HUB_ADDRESS = 'http://localhost:4444/wd/hub'
 PAYMENT_URL = 'https://ais.usvisa-info.com/ru-kz/niv/schedule/71354735/payment'
 EXIT = False
 
-API_ID = '23238237'
-API_HASH = 'c9a677eb94e21ed0b889e426fa19180b'
+API_ID = os.getenv('API_ID')
+API_HASH = os.getenv('API_HASH')
 
 
 # chrome_options = webdriver.ChromeOptions()
@@ -78,8 +78,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 
 # REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
-REMOTE_URL = "https://production-sfo.browserless.io/chromium/bql?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
-
+REMOTE_URL = os.getenv('REMOTE_URL')
 
 # driver = webdriver.Remote(
 #     command_executor='https://chrome.browserless.io/webdriver?token=<YOUR_TOKEN>',
