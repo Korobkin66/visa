@@ -52,7 +52,6 @@ PUSH_TOKEN = os.getenv('PUSH_TOKEN')
 PUSH_USER = os.getenv('PUSH_USER')
 
 MY_SCHEDULE_DATE = "2025-10-27"  # 2025-12-02
-# MY_CONDITION = lambda month,day: int(month) == 11 or (int(month) == 12 and int(day) <=5)
 MY_CONDITION = lambda month,day: int(month) == 11 and int(day) >= 5
 
 SLEEP_TIME = 5   # recheck time interval
@@ -69,21 +68,12 @@ API_ID = os.getenv('API_ID')
 API_HASH = os.getenv('API_HASH')
 
 
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_SHIM', None)
-# browser = webdriver.Chrome(executable_path="chromedriver", chrome_options=chrome_options)
-
-
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
+options.add_argument("--no-sandbox")  # для работы с Chrome
 
 # REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
 REMOTE_URL = os.getenv('REMOTE_URL')
-
-# driver = webdriver.Remote(
-#     command_executor='https://chrome.browserless.io/webdriver?token=<YOUR_TOKEN>',
-#     options=options
-# )
 
 
 def send(msg):
@@ -105,8 +95,6 @@ def get_drive():
         dr = webdriver.Remote(command_executor=REMOTE_URL, options=options)
 
     return dr
-    # dr = webdriver.Chrome()
-    # return dr
 
 
 def login():
@@ -153,14 +141,10 @@ def do_login_action(driver):
 def get_payment(driver):
     driver.get(PAYMENT_URL)
     time.sleep(random.randint(1, 3))
-    # if not is_logined():
-    #     login()
-    #     return get_date()
-    # else:
     content = driver.find_element(By.XPATH, '//*[@id="paymentOptions"]/div[2]/table/tbody/tr[1]/td[2]').text
-    # date = json.loads(content)
+
     return content
- 
+
 
 if __name__ == "__main__":
 
