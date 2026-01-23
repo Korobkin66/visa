@@ -69,8 +69,12 @@ API_HASH = os.getenv('API_HASH')
 
 
 options = webdriver.ChromeOptions()
-options.add_argument("--headless")
+# options.add_argument("--headless")
+options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")  # для работы с Chrome
+
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-gpu")
 
 # REMOTE_URL = "https://chrome.browserless.io/webdriver?token=2TNibLG6T6LLHpq94c41ab667ecb4d15c528c4598a9dcdfcb"
 REMOTE_URL = os.getenv('REMOTE_URL')
