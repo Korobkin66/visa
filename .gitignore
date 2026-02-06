@@ -9,3 +9,8 @@ raw_products.csv
 thecode2.log
 raw_generated_data_archive
 VISA_folder/.env
+venv
+VISA_folder/chromedriver-linux64.zip
+VISA_folder/google-chrome-stable_current_amd64.deb
+VISA_folder/chromedriver-linux64
+VISA_folder/my_session.session
