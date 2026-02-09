@@ -9,9 +9,6 @@ from datetime import datetime
 
 import requests
 from selenium import webdriver
-# from selenium.webdriver.support import expected_conditions as EC 
-# from selenium.webdriver.support.ui import WebDriverWait as Wait
-# from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
@@ -27,13 +24,10 @@ console_out = logging.StreamHandler()
 logging.basicConfig(handlers=(file_log, console_out), level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S')
-
 console_out.setLevel(logging.DEBUG)
-
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s',
                               datefmt='%Y-%m-%d %H:%M:%S')
 console_out.setFormatter(formatter)
-
 logger.addHandler(console_out)
 
 
@@ -52,7 +46,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 
 REMOTE_URL = os.getenv('REMOTE_URL')
 
-MY_SCHEDULE_DATE = "2025-10-27"  # 2025-12-02
+MY_SCHEDULE_DATE = "2025-10-27"
 MY_CONDITION = lambda month,day: int(month) == 11 and int(day) >= 5
 
 SLEEP_TIME = 5   # recheck time interval
@@ -86,14 +80,6 @@ options.add_argument("--disable-features=UseDBus")
 
 def send_telegram_message(text: str):
 
-    # url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-    # payload = {
-    #     "chat_id": CHAT_ID,
-    #     "text": text,
-    #     "parse_mode": "HTML"}
-    # response = requests.post(url, data=payload)
-    # response.raise_for_status()
-
     try:
         if not text:
             return
@@ -113,15 +99,6 @@ def send_telegram_message(text: str):
 
     except Exception as e:
         logger.error(f"Telegram error: {e}")
-
-# def send(msg):
-#     url = "https://api.pushover.net/1/messages.json"
-#     data = {
-#         "token": PUSH_TOKEN,
-#         "user": PUSH_USER,
-#         "message": msg
-#     }
-#     requests.post(url, data)
 
 
 def get_drive():
@@ -193,32 +170,8 @@ if __name__ == "__main__":
 
     logger.info("parsing start")
 
-    # создаёт сессию (при первом запуске Telegram попросит код из чата)
-    # client = TelegramClient('my_session', API_ID, API_HASH)
-
-    # def main():
-    #     while True:
-    #         # log_var = login()
-    #         try:
-    #             # log_var = await asyncio.to_thread(login)
-    #             log_var = login()
-    #             logger.info(f'Содержание функции login: {log_var}')
-    #             print(log_var)
-    #             if log_var:
-    #                 message = "🎉 Найдены свободные слоты:\n\n"
-    #                 message += "\n".join(log_var)
-    #                 send_telegram_message(message)
-    #                 logger.info('Сообщение было отправлено')
-    #             now = datetime.now()
-    #             if now.hour == 15 and now.minute == 0:
-    #                 send_telegram_message('active')
-    #         except Exception as e:
-    #             print(e)
-    #             send_telegram_message(f'Произошла ошибка {e}')
-    #         time.sleep(CHECK_INTERVAL)
-
     def main():
-        last_heartbeat = time.time()  # ← ВАЖНО
+        last_heartbeat = time.time()
 
         while True:
             try:
@@ -231,7 +184,6 @@ if __name__ == "__main__":
                     send_telegram_message(message)
                     logger.info('Сообщение было отправлено')
 
-                # ❤️ heartbeat (жив ли процесс)
                 now_ts = time.time()
                 if now_ts - last_heartbeat > HEARTBEAT_INTERVAL:
                     send_telegram_message("✅ Visa watcher работает")
@@ -240,7 +192,7 @@ if __name__ == "__main__":
             except Exception as e:
                 logger.exception("Unhandled error in main loop")
 
-                # ⚠️ никогда не падаем из-за Telegram
+                # никогда не падаем из-за Telegram
                 try:
                     send_telegram_message(
                         "❌ Ошибка в Visa watcher\n"
